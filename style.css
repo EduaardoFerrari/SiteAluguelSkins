@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.secao-esq {
+    flex: 1;
+    overflow: hidden;
+}
+
+.secao-esq img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-position: 80% center;
+    opacity: 0.9;
+}
+
+.secao-dir {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+}
+
+.caixa-login {
+    width: 80%;
+    max-width: 400px;
+    padding: 2.5rem;
+    background: #DFD0B8;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: rgb(49, 49, 49);
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(49, 49, 49);
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.lembre-se {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lembre-se input {
+    margin-right: 10px;
+}
+
+.botao-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #ED9325;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao-login:hover {
+    background-color: #be751c;
+    box-shadow: 0px 0px 10px rgba(255, 102, 0, 0.7);
+    transform: scale(1.1)
+}
+
+.link-ajuda {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-ajuda a {
+    color: #666;
+    text-decoration: none;
+}
+
+.link-ajuda a:hover {
+    text-decoration: underline;
+}
