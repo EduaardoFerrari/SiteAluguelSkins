@@ -115,3 +115,22 @@ h2 {
 .link-ajuda a:hover {
     text-decoration: underline;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-tamanho{
+    width: 100px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.aa {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5ex;
+}
