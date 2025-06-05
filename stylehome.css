@@ -22,8 +22,23 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo h1 {
     font-size: 1.5rem;
+}
+
+.barra {
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: gray;
+    margin-left: 10px;
+    font-size: 30px;
 }
 
 /* Navegação principal */
@@ -111,4 +126,17 @@ body {
 /* Classe para mostrar o dropdown */
 .dropdown-menu.show {
     max-height: 500px; /* Valor maior que o necessário */
+}
+
+.conteudo{
+    display: flex;
+    margin: 30px 30px;
+}
+
+.fonte {
+    font-family: "Akaya Kanadaka", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: white;
 }

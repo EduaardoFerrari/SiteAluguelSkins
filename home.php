@@ -6,17 +6,21 @@
     <title> Início </title>
     <link rel="stylesheet" href="styleHome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header-principal">
         <div class="logo">
             <h1> RentSkins </h1>
+            <span class="barra"></span> 
         </div>
 
         <nav class="nav-principal">
             <ul class="nav-links">
                 <li><a href="#"> Sobre </a></li>
-                <li><a href="#"> Nossos Serviços </a></li>
+                <li><a href="#"> Ajuda </a></li>
             </ul>
 
             <div class="hamburger" id="hamburger">
@@ -33,9 +37,9 @@
         </nav>
     </header>
 
-    <body>
-        <p> TESTE TESTE TESTE TESTE </p>
-    </body>
+    <section class="conteudo">
+        <p class="fonte"> Empreste suas skins para os maiores do cenário! </p>
+    </section>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
