@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header-principal">
@@ -38,7 +41,29 @@
     </header>
 
     <section class="conteudo">
-        <p class="fonte"> Empreste suas skins para os maiores do cenário! </p>
+        <p class="fonte"> Empreste suas skins para os maiores do 
+            <span id="cor">cenário!</span> 
+        </p>
+    </section>
+    <section>
+        <div class="ajuste">
+            <p id="fonte2"> Veja suas skins com seus jogadores favoritos em grandes campeonatos :D </p>
+            <hr class="custom">
+        </div>
+    </section>
+
+    <section class="conteudo2">
+            <button class="disp" id="fonte2"> Veja os inventários disponiveis </button>
+            <button class="disp" id="fonte2"> Saiba mais! </button>
+    </section>
+    
+    <section class="jogadores"> 
+        <h2> Jogadores </h2>
+        <div class="grid-jog"> 
+            <div class="img-jog"> 
+                
+            </div>
+        </div>
     </section>
 
     <script>

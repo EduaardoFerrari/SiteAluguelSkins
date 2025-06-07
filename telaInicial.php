@@ -7,7 +7,7 @@
     <title> Tela de Login </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,8 +20,8 @@
             <div class="caixa-login">
                 <div class="aa">
                     <div>
-                        <h1> RentSkins </h1>
-                        <h2> Alugue suas Skins! </h2>
+                        <h1 class="fonte"> RentSkins </h1>
+                        <h2 class="fonte"> Alugue suas Skins! </h2>
                     </div>
                     <div class="logo">
                         <img src="awp dlore.png" alt="Logo RentSkins" class="logo-tamanho">
