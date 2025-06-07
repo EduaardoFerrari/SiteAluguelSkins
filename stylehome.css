@@ -212,3 +212,48 @@ body::before {
   font-weight: 700;
   font-style: normal;
 }
+
+.jogadores{
+    color: white;
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.jogadores h2{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-jog{
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-jog{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.212);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.img-jog img{
+    width: 70%;
+    height: 200px 150px;
+    object-fit: cover;
+}
+
+.img-jog h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}

@@ -58,10 +58,31 @@
     </section>
     
     <section class="jogadores"> 
-        <h2> Jogadores </h2>
+        <h2> Confira Nossos Jogadores! </h2>
         <div class="grid-jog"> 
             <div class="img-jog"> 
-                
+                <img src="fallen.png" alt="fó">
+                <h3> Professor </h3>
+            </div>
+            
+            <div class="img-jog"> 
+                <img src="molodoy.png" alt="goat">
+                <h3> Molodoy </h3>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="yekindar.png" alt="yekindar">
+                <h3> Yekindar </h3>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="yurih.png" alt="yuurih">
+                <h3> Yuurih </h3>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="ks.png" alt="ks">
+                <h3> KSCERATO </h3>
             </div>
         </div>
     </section>
