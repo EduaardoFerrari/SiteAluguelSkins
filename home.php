@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
     <header class="header-principal">
@@ -59,30 +61,95 @@
     
     <section class="jogadores"> 
         <h2> Confira Nossos Jogadores! </h2>
-        <div class="grid-jog"> 
+        <div class="colaboradores-carrossel"> 
             <div class="img-jog"> 
                 <img src="fallen.png" alt="fó">
                 <h3> Professor </h3>
+                <p> Rifler/Suporte </p>
             </div>
             
             <div class="img-jog"> 
                 <img src="molodoy.png" alt="goat">
                 <h3> Molodoy </h3>
+                <p> Awper </p>
             </div>
 
             <div class="img-jog"> 
                 <img src="yekindar.png" alt="yekindar">
                 <h3> Yekindar </h3>
+                <p> Entry Fragger </p>
             </div>
 
             <div class="img-jog"> 
                 <img src="yurih.png" alt="yuurih">
                 <h3> Yuurih </h3>
+                <p> Rifler </p>
             </div>
 
             <div class="img-jog"> 
                 <img src="ks.png" alt="ks">
                 <h3> KSCERATO </h3>
+                <p> Ancora/Lurker </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="vini.png" alt="VINI">
+                <h3> VINI </h3>
+                <p> IGL </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="try.png" alt="try">
+                <h3> Try </h3>
+                <p> Awper </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="noway.png" alt="noway">
+                <h3> Noway </h3>
+                <p> Rifler </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="decenty.png" alt="decenty">
+                <h3> Decenty </h3>
+                <p> Baiter </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="chay.png" alt="chay">
+                <h3> Chay </h3>
+                <p> Rifler </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="nqz.png" alt="nqz">
+                <h3> NQZ </h3>
+                <p> Awper </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="bigu.png" alt="bigu">
+                <h3> Biguzera </h3>
+                <p> IGL </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="snow.png" alt="snow">
+                <h3> Snowzin </h3>
+                <p> Rifler/Entry Fragger </p>
+            </div>
+
+            <div class="img-jog"> 
+                <img src="davideus.png" alt="davideus">
+                <h3> Dav1Deus </h3>
+                <p> Rifler </p>
+            </div>
+            
+            <div class="img-jog"> 
+                <img src="dgt.png" alt="dgt">
+                <h3> DGT </h3>
+                <p> Rifler/Lurker </p>
             </div>
         </div>
     </section>
@@ -104,5 +171,20 @@
     });
 });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $('.colaboradores-carrossel').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,  // Quantidade de jogadores amostra
+            slidesToScroll: 1, // Rolamento dos jogadores 
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000
+        });
+</script>
 </body>
 </html>

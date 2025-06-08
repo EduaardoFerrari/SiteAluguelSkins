@@ -20,14 +20,13 @@ body::before {
     top: 0; left: 0; right: 0; bottom: 0;
     background-color: rgba(0, 0, 0, 0.7); /* 0.5 = 50% escuro */
     z-index: -1;
-
     box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.9);
     pointer-events: none;
 }
 
 /*Estilo do header */
 .header-principal {
-    background-color: #222831;
+    background-color: #530101;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -35,6 +34,7 @@ body::before {
     padding: 1rem 2rem;
     position: relative;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: rgba(90, 12, 12, 0.3);
 }
 
 .logo{
@@ -80,7 +80,7 @@ body::before {
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    color: #530101;
 }
 
 /* Ícone hamburguer */
@@ -102,7 +102,7 @@ body::before {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #414e61;
+    background-color: rgba(24, 24, 24, 0.7);
     width: 200px;
     border-radius: 0 0 5px 5px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
@@ -140,7 +140,7 @@ body::before {
 
 /* Classe para mostrar o dropdown */
 .dropdown-menu.show {
-    max-height: 500px; /* Valor maior que o necessário */
+    max-height: 500px; 
 }
 
 .conteudo{
@@ -221,31 +221,46 @@ body::before {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.jogadores p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: linear-gradient(to right, #ff4d4d, #990000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: bold;
+}
+
 .jogadores h2{
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to top, #ff0000, #ff6600, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.grid-jog{
+/*.grid-jog{
     margin: 40px auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     justify-content: center;
 }
+*/
 
-.img-jog{
+/*.img-jog{
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.212);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    padding: 10px 20px;
 }
 
 .img-jog img{
-    width: 70%;
-    height: 200px 150px;
+    width: 20%;
+    height: 20px 20px;
     object-fit: cover;
 }
 
@@ -257,3 +272,62 @@ body::before {
     font-size: 16px;
     color: rgb(255, 255, 255);
 }
+*/
+
+/* Espaçamento entre os itens do carrossel */
+.colaboradores-carrossel {
+    margin: 40px auto;
+    padding: 0 20px; /* Espaçamento lateral */
+}
+
+/* Estilo para cada item do jogador */
+.colaboradores-carrossel .img-jog {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.212);
+    margin: 10px 10px; /* Espaço entre os itens */
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.colaboradores-carrossel .img-jog:hover {
+    transform: scale(1.05);
+}
+
+.colaboradores-carrossel .img-jog img {
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.colaboradores-carrossel .img-jog h3 {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: white;
+}
+
+/*pontos de navegação */
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    transform: scale(1.2);
+}
+
+.slick-dots li button:before {
+    color: white;
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+    opacity: 1;
+}
+
