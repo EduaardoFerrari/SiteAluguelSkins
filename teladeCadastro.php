@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css.css">
     <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="css.css">
 </head>
-
 <body>
-    <section class="header">
-        <section class="logo">
-            <img src="logo.png" alt="logo xhopi">
-            <h1> Xhopii </h1>
-        </section>
-        <a class="sair" href="#"> Sair </a>
-    </section>
-    <section class="navbar">
-        <a href="#"> Home </a>
-        <a href="#"> Cadastro Cliente </a>
-        <a href="#"> Cadastro Funcionário </a>
-        <a href="#"> Cadastro Produto </a>
-        <a href="#"> Ver Clientes </a>
-        <a href="#"> Ver Funcionários </a>
-        <a href="#"> Ver Produtos </a>
-    </section>
-    <section class="cadastro-maior">
-        <section class="Cadastro">
-            <h2>Cadastro Cliente</h2>
-            <input class="inputs" type="text" placeholder="Nome">
-            <input class="inputs" type="text" placeholder="Sobrenome">
-            <input class="inputs" type="text" placeholder="CPF">
-            <input class="inputs" type="date" required>
-            <input class="inputs" type="tel" placeholder="Telefone">
-            <input class="inputs" type="email" placeholder="Email">
-            <input class="inputs" type="password" placeholder="Senha">
-            <button>Cadastrar</button>
-        </section>
-    </section>
 </body>
-</html>
+
+<?php
+require_once 'db.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $sobrenome = $_POST["sobrenome"];
+    $cpf = $_POST["cpf"];
+    $data_nascimento = $_POST["data_nascimento"];
+    $telefone = $_POST["telefone"];
+    $email = $_POST["email"];
+    $senha = password_hash($_POST["senha"], PASSWORD_DEFAULT);
+
+    $sql = "INSERT INTO usuarios (nome, sobrenome, cpf, data_nascimento, telefone, email, senha)
+            VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $stmt = mysqli_prepare($conn, $sql);
+    mysqli_stmt_bind_param($stmt, "sssssss", $nome, $sobrenome, $cpf, $data_nascimento, $telefone, $email, $senha);
+
+    if (mysqli_stmt_execute($stmt)) {
+        echo "Cadastro realizado com sucesso!";
+    } else {
+        echo "Erro: " . mysqli_error($conn);
+    }
+}
+?>
+
+<form method="POST">
+    <input type="text" name="nome" placeholder="Nome" required>
+    <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+    <input type="text" name="cpf" placeholder="CPF" required>
+    <input type="date" name="data_nascimento" required>
+    <input type="text" name="telefone" placeholder="Telefone" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+    <button type="submit">Cadastrar</button>
+</form>
