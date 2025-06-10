@@ -1,0 +1,83 @@
+/* Estilo geral da página */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C2F36;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Caixa do formulário */
+form {
+    background-color: #3C3F46;
+    padding: 40px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+/* Título */
+form h2 {
+    text-align: center;
+    color: #FF5722;
+    margin-bottom: 25px;
+}
+
+/* Campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Botão */
+button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Mensagens de retorno */
+p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+select[name="tipo"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 2px solid #4A4D55;
+    border-radius: 8px;
+    background-color: #2C2F36;
+    color: white;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 20px;
+}
