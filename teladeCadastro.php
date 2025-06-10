@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro Cliente</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="assets/css.css">
+=======
+    <link rel="stylesheet" href="css.css">
+>>>>>>> 764079f958e50873ed268709cb10eec916439160
 </head>
 <body>
 </body>
