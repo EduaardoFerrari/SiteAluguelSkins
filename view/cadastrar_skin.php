@@ -1,25 +1,5 @@
 <?php
-require_once 'db.php';
-
-// Se o formulário foi enviado
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST["nome"];
-    $tipo = $_POST["tipo"];
-    $imagem_url = $_POST["imagem_url"];
-    $pro_player_id = $_POST["pro_player_id"];
-
-    $sql = "INSERT INTO skins (nome, tipo, imagem_url, pro_player_id) VALUES (?, ?, ?, ?)";
-    $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "sssi", $nome, $tipo, $imagem_url, $pro_player_id);
-
-    if (mysqli_stmt_execute($stmt)) {
-        echo "<p>Skin cadastrada com sucesso!</p>";
-    } else {
-        echo "<p>Erro ao cadastrar skin: " . mysqli_error($conn) . "</p>";
-    }
-}
-
-// Buscar pro players para o <select>
+require_once '../db.php';
 $pro_players_result = mysqli_query($conn, "SELECT id, nome FROM pro_players");
 ?>
 
@@ -29,12 +9,12 @@ $pro_players_result = mysqli_query($conn, "SELECT id, nome FROM pro_players");
 <head>
     <meta charset="UTF-8">
     <title>Cadastrar Skin</title>
-    <link rel="stylesheet" href="stylecadastrar_skin.css">
+    <link rel="stylesheet" href="../StyleCss/stylecadastrar_skin.css">
 </head>
 
 <body>
 
-    <form method="POST">
+    <form method="post" action="../index.php?module=skin&action=create">
         <h2>Cadastrar Skin</h2>
         <input type="text" name="nome" placeholder="Nome da skin" required>
         <select name="tipo" required>
@@ -50,7 +30,7 @@ $pro_players_result = mysqli_query($conn, "SELECT id, nome FROM pro_players");
         <input type="text" name="imagem_url" placeholder="URL da imagem da skin" required>
 
         <select name="pro_player_id" required>
-            <option value="">Selecione um Pro Player</option>
+            <option value="">Selecione um Jogador Profissional</option>
             <?php while ($player = mysqli_fetch_assoc($pro_players_result)): ?>
                 <option value="<?= $player['id'] ?>"><?= $player['nome'] ?></option>
             <?php endwhile; ?>

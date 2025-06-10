@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./StyleCss/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="secao-esq">
-            <img src="csimagem.png" alt="Imagem decorativa">
+            <img src="./imagens/csimagem.png" alt="Imagem decorativa">
         </div>
         <div class="secao-dir">
             <div class="caixa-login">
@@ -24,7 +24,7 @@
                         <h2 class="fonte"> Alugue suas Skins! </h2>
                     </div>
                     <div class="logo">
-                        <img src="awp dlore.png" alt="Logo RentSkins" class="logo-tamanho">
+                        <img src="./imagens/awp dlore.png" alt="Logo RentSkins" class="logo-tamanho">
                     </div>
                 </div>
                 <form>
