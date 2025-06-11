@@ -45,10 +45,16 @@
             color: #777;
         }
 
-        .weapons-container {
+        .armas-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
+        }
+
+        .armas-container img{
+            display: flex;
+            width: 70px;
+            height: auto;
         }
 
         .arma-categoria {
@@ -166,6 +172,7 @@
             font-weight: bold;
             margin-bottom: 5px;
         }
+
 
         hr {
             border: none;

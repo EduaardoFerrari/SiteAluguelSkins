@@ -8,14 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-    <!--<link rel="stylesheet" href="assets/style.css"> -->
     <link rel="stylesheet" href="./StyleCss/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="secao-esq">
-            <img src="assets/img/csimagem.png" alt="Imagem decorativa">
+            <img src="./StyleCss/trofeu.png" alt="Imagem decorativa">
         </div>
         <div class="secao-dir">
             <div class="caixa-login">
@@ -50,8 +49,7 @@
                     </div>
 
                     <div class="link-ajuda">
-                        <a href="#" class="ajuda"> Esqueci minha senha </a>
-                        <a href="telaInicialPro.php" class="ajuda"> É jogador? Clique aqui. </a>
+                        <a href="#"> Esqueci minha senha </a>
                     </div>
                 </form>
             </div>
