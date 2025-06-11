@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css.css">
 </head>
 
-<body>
+<body style="background-color: #2C2F36;">
     <div style="text-align:center; margin-top:50px;">
-        <h2>Cadastro realizado com sucesso!</h2>
-        <p><a href="./view/cadastrar_usuario.php" style="color:#FF5722;">Cadastrar outro cliente</a></p>
+        <h2 style="color:white">Cadastro realizado com sucesso!</h2>
+        <p><a href="./view/cadastrar_usuario.php" style="color:#FF5722;">Realizer novo cadastro</a></p>
     </div>
 </body>
 

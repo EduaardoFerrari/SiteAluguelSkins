@@ -1,3 +1,38 @@
+<?php
+$mensagem = "";
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Dados recebidos
+    $nome = $_POST["nome"] ?? "";
+    $sobrenome = $_POST["sobrenome"] ?? "";
+    $cpf = $_POST["cpf"] ?? "";
+    $data_nascimento = $_POST["data_nascimento"] ?? "";
+    $telefone = $_POST["telefone"] ?? "";
+    $email = $_POST["email"] ?? "";
+    $senha = $_POST["senha"] ?? "";
+
+    // Conexão com o banco (ajuste os dados abaixo conforme seu ambiente)
+    $conn = new mysqli("localhost", "root", "", "cs2_skins");
+
+    if ($conn->connect_error) {
+        die("Erro na conexão: " . $conn->connect_error);
+    }
+
+    // Prepara e executa o INSERT
+    $stmt = $conn->prepare("INSERT INTO usuarios (nome, sobrenome, cpf, data_nascimento, telefone, email, senha) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssss", $nome, $sobrenome, $cpf, $data_nascimento, $telefone, $email, $senha);
+
+    if ($stmt->execute()) {
+        $mensagem = "<div class='success-message'>Usuário cadastrado com sucesso!</div>";
+    } else {
+        $mensagem = "<div class='error-message'>Erro ao cadastrar: " . $stmt->error . "</div>";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,11 +43,11 @@
 </head>
 
 <body>
-    <form method="post" action="../index.php?module=user&action=cadastrar">
+    <form method="post" action="">
         <h2>Cadastro de Cliente</h2>
-        <?php if (!empty($error)): ?>
-            <p style="color:red; text-align:center;"><?= $error ?></p>
-        <?php endif; ?>
+
+        <?php if (!empty($mensagem)) echo $mensagem; ?>
+
         <input type="text" name="nome" placeholder="Nome" required>
         <input type="text" name="sobrenome" placeholder="Sobrenome" required>
         <input type="text" name="cpf" placeholder="CPF" required>
