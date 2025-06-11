@@ -44,7 +44,7 @@
                         <label for="lembrar"> Lembre-se de mim </label>
                     </div>
 
-                    <button type="submit" class="botao-login"> Entrar </button>
+                    <a href="view/home.php" role="button" class="botao-login"> Entrar </a>
 
                     <div class="link-ajuda">
                         <a href="#"> Não consegue acessar? </a>

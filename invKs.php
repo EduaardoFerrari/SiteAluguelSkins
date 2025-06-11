@@ -15,7 +15,7 @@
         <div class="header">
             <div class="nome"> KSCERATO </div>
             <div class="info-jogador">
-                <span> Furia - Rifler </span>
+                <span> Furia - Ancora/Luker </span>
             </div>
         </div>
         

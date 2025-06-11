@@ -26,27 +26,21 @@
             </div>
 
             <nav class="nav-principal">
-                <ul class="nav-links">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Ajuda</a></li>
-                </ul>
-
                 <div class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
+                    <i class="fa-solid fa-burger"></i>
                 </div>
 
                 <div class="dropdown-menu" id="dropdownMenu">
                     <ul>
-                        <li><a href="#"><i class="fas fa-user"></i> Minha Conta</a></li>
-                        <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
-                        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                        <li><a href="../sobreNos.php"> <i class="fa-regular fa-address-card"></i> Sobre nós </a></li>
+                        <li><a href="../telaInicial.php"> <i class="fas fa-sign-out-alt"></i> Sair </a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <section class="conteudo">
-            <p class="fonte">Empreste suas skins para os maiores do 
+            <p class="fonte"> Empreste suas skins para os maiores do 
                 <span id="cor">cenário!</span> 
             </p>
         </section>
@@ -59,11 +53,11 @@
         </section>
 
         <section class="conteudo2">
-            <button class="disp" id="fonte2">Saiba mais!</button>
+            <a href="../sobreNos.php" role="button" class="fonte2"> Saiba mais! </a>
         </section>
         
         <section class="jogadores"> 
-            <h2>Confira Nossos Jogadores!</h2>
+            <h2> Confira Nossos Jogadores! </h2>
             <div class="colaboradores-carrossel"> 
                 <div class="img-jog"> 
                 <a href="../invFallen.php">
@@ -176,7 +170,7 @@
         <div class="cards"> 
             <div class="card"> 
                 <img class="user" src="../assets/img/badfallen.png" alt="Fallen">
-                <h3>Fóllen</h3>
+                <h3> Fóllen </h3>
 
                 <div class="stars"> 
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
@@ -185,12 +179,13 @@
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
                 </div>
-                <p class="texto">Agora ficou muito mais facil de recebermos skins dos nossos fãs!</p>
+                <p class="texto">Sempre admirei a comunidade, mas agora ela faz parte do jogo de verdade.
+                    Usar a skin de um fã em uma final foi surreal. É uma conexão única com quem torce por nós!</p>
             </div>
 
             <div class="card"> 
                 <img class="user" src="../assets/img/molodas.png" alt="Molodas">
-                <h3>Molodas</h3>
+                <h3> Molodas </h3>
 
                 <div class="stars"> 
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
@@ -199,12 +194,13 @@
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
                 </div>
-                <p class="texto">Agora ficou muito mais facil de recebermos skins dos nossos fãs!</p>
+                <p class="texto">Receber uma skin lendária direto de um fã e usar ela no palco foi uma das experiências mais marcantes da minha carreira.
+                    É como se cada round tivesse mais peso.</p>
             </div>
 
             <div class="card"> 
                 <img class="user" src="../assets/img/biguzera.png" alt="Bigu">
-                <h3>Bigu</h3>
+                <h3> Bigu </h3>
 
                 <div class="stars"> 
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
@@ -213,10 +209,47 @@
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
                     <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
                 </div>
-                <p class="texto">Agora ficou muito mais facil de recebermos skins dos nossos fãs!</p>
+                <p class="texto"> O site mudou o jogo.
+                    Agora os fãs participam ativamente das partidas, e a gente entra no servidor com muito mais história pra contar. Isso é CS no mais alto nível</p>
+            </div>
+
+            <div class="card"> 
+                <img class="user" src="../assets/img/gau.png" alt="Gau">
+                <h3> Gaules </h3>
+
+                <div class="stars"> 
+                    <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
+                    <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
+                    <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
+                    <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
+                    <img class="star" src="../assets/img/star-svgrepo-com.svg" alt="Estrela">
+                </div>
+                <p class="texto"> Oxe, eu nem sou jogador profissional
+                    kkkkkkkkk </p> <!-- piadinha para distrair -->
             </div>
         </div>
     </section>
+
+    <footer class="conteudo-footer">
+        <div>
+            © 2025 RentSkins. Todos os direitos reservados.
+        </div>
+        <div class="footer-links">
+            <a href="../sobreNos.php"> Sobre nós </a>
+            <a href="mailto:teste@teste.com"> Contato </a>
+            <a href="#"> Termos de uso </a>
+        </div>
+          <div class="redes-sociais">
+            <a href="https://facebook.com" target="_blank">
+                <img src="../assets/img/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="../assets/img/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="../assets/img/linkedin.svg" alt="LinkedIn">
+            </a>
+        </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

@@ -13,9 +13,9 @@
     <!-- Painel Skins -->
     <div class="painel-skins">
         <div class="header">
-            <div class="nome"> FALLEN </div>
+            <div class="nome"> YEKINDAR </div>
             <div class="info-jogador">
-                <span> Furia - Rifler/Suporte </span>
+                <span> Furia - Rifler </span>
             </div>
         </div>
         

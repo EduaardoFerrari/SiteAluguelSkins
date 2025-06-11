@@ -6,16 +6,16 @@
 }
 
 body {
-<<<<<<<< HEAD:assets/stylehome.css
+
     background-color: #181818;
     color: white;
-========
+
     background-color: #393E46;
     background-image: url("/imagens/howl-background.png");
     background-size: cover;       /* cobre toda a tela */
     background-position: center 15%;;  /* centraliza a imagem */
     background-repeat: no-repeat; /* evita repetição */
->>>>>>>> 764079f958e50873ed268709cb10eec916439160:StyleCss/stylehome.css
+
 }
 
 .content-top {
