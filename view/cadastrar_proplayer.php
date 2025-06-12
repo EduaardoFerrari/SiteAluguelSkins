@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <body>
     <header class="site-header">
-        <a href="../view/home.php" class="btn-voltar">Tela Inicial</a>
+        <a href="../telaInicialPro.php" class="btn-voltar">Tela Inicial</a>
     </header>
     <form method="post" action="">
         <h2>Cadastro de Pro Player</h2>
@@ -62,7 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="date" name="data_nascimento" required>
 
         <button type="submit">Cadastrar Pro Player</button>
+
     </form>
+
 </body>
 
 </html>

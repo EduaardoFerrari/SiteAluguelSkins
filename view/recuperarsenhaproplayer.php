@@ -39,12 +39,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Recuperar Senha - Pro Player</title>
     <link rel="stylesheet" href="../StyleCss/css.css">
 </head>
+
 <body>
+
+    <header class="site-header">
+        <a href="../telaInicialPro.php" class="btn-voltar">Tela Inicial</a>
+    </header>
+
     <form method="post" action="">
         <h2>Recuperar Senha - Pro Player</h2>
 
@@ -55,4 +62,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <button type="submit">Atualizar Senha</button>
     </form>
 </body>
+
 </html>

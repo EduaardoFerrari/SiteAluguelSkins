@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body>
 
     <header class="site-header">
-        <a href="../view/home.php" class="btn-voltar">Tela Inicial</a>
+        <a href="../telaInicial.php" class="btn-voltar">Tela Inicial</a>
     </header>
 
     <form method="post" action="">
