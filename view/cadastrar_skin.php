@@ -1,5 +1,5 @@
 <?php
-require_once '../db.php';
+require_once 'db.php';
 $pro_players_result = mysqli_query($conn, "SELECT id, nome FROM pro_players");
 ?>
 
@@ -8,13 +8,13 @@ $pro_players_result = mysqli_query($conn, "SELECT id, nome FROM pro_players");
 
 <head>
     <meta charset="UTF-8">
-    <title>Cadastrar Skin</title>
-    <link rel="stylesheet" href="../StyleCss/stylecadastrar_skin.css">
+    <title> Cadastrar Skin </title>
+    <link rel="stylesheet" href="../assets/stylecadastrar_skin.css">
 </head>
 
 <body>
 
-    <form method="post" action="../index.php?module=skin&action=create">
+    <form method="post" action="index.php?module=skin&action=criada">
         <h2>Cadastrar Skin</h2>
         <input type="text" name="nome" placeholder="Nome da skin" required>
         <select name="tipo" required>

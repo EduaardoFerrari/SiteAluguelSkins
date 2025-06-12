@@ -83,70 +83,70 @@
         }
 
         .skin-slot.glock {
-            background-image: url('assets/img/glock.png');
+            background-image: url('../assets/img/glock.png');
             background-size: 20%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.usp {
-            background-image: url('assets/img/usp.png');
+            background-image: url('../assets/img/usp.png');
             background-size: 20%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.faca {
-            background-image: url('assets/img/faca.png');
+            background-image: url('../assets/img/faca.png');
             background-size: 20%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.ak47 {
-            background-image: url('assets/img/ak.png');
+            background-image: url('../assets/img/ak.png');
             background-size: 40%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.m4a1-s {
-            background-image: url('assets/img/m4.png');
+            background-image: url('../assets/img/m4.png');
             background-size: 40%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.awp {
-            background-image: url('assets/img/awp.png');
+            background-image: url('../assets/img/awp.png');
             background-size: 50%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.scout {
-            background-image: url('assets/img/scout.png');
+            background-image: url('../assets/img/scout.png');
             background-size: 50%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.mp9 {
-            background-image: url('assets/img/mp9.png');
+            background-image: url('../assets/img/mp9.png');
             background-size: 30%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.mac-10 {
-            background-image: url('assets/img/mac-10.png');
+            background-image: url('../assets/img/mac-10.png');
             background-size: 20%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
         .skin-slot.deagle {
-            background-image: url('assets/img/deagle.png');
+            background-image: url('../assets/img/deagle.png');
             background-size: 20%;
             background-repeat: no-repeat;
             background-position: center;

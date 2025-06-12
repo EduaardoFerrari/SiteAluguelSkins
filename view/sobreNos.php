@@ -7,7 +7,7 @@
     <title> Sobre Nós </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="stylesheet" href="styleNos.css" />
+    <link rel="stylesheet" href="../assets/styleNos.css" />
 </head>
 
 <body>
@@ -69,7 +69,7 @@
                 </p>
             </main>
             <footer>
-                <a href="view/home.php" class="botao-voltar"> ← Voltar ao início </a>
+                <a href="home.php" class="botao-voltar"> ← Voltar ao início </a>
             </footer>
         </div>
 

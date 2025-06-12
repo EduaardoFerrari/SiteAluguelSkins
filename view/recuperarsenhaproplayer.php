@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Recuperar Senha - Pro Player</title>
-    <link rel="stylesheet" href="../StyleCss/css.css">
+    <link rel="stylesheet" href="../assets/css.css">
 </head>
 
 <body>

@@ -32,7 +32,7 @@
 
                 <div class="dropdown-menu" id="dropdownMenu">
                     <ul>
-                        <li><a href="../sobreNos.php"> <i class="fa-regular fa-address-card"></i> Sobre nós </a></li>
+                        <li><a href="sobreNos.php"> <i class="fa-regular fa-address-card"></i> Sobre nós </a></li>
                         <li><a href="../telaInicial.php"> <i class="fas fa-sign-out-alt"></i> Sair </a></li>
                     </ul>
                 </div>
@@ -53,14 +53,15 @@
         </section>
 
         <section class="conteudo2">
-            <a href="../sobreNos.php" role="button" class="fonte2"> Saiba mais! </a>
+            <a href="cadastrar_skin.php" role="button" class="fonte2"> Cadastre suas skins! </a>
+            <a href="sobreNos.php" role="button" class="fonte2"> Saiba mais! </a>
         </section>
         
         <section class="jogadores"> 
             <h2> Confira Nossos Jogadores! </h2>
             <div class="colaboradores-carrossel"> 
                 <div class="img-jog"> 
-                <a href="../invFallen.php">
+                <a href="invFallen.php">
                     <img src="../assets/img/fallen.png" alt="fó">
                 </a>
                     <h3>Professor</h3>
@@ -68,7 +69,7 @@
                 </div>
                 
                 <div class="img-jog"> 
-                <a href="../invMolo.php">
+                <a href="invMolo.php">
                     <img src="../assets/img/molodoy.png" alt="goat">
                 </a>
                     <h3>Molodoy</h3>
@@ -76,7 +77,7 @@
                 </div>
 
                 <div class="img-jog"> 
-                <a href="../invYekindar.php">
+                <a href="invYekindar.php">
                     <img src="../assets/img/yekindar.png" alt="yekindar">
                 </a>
                     <h3>Yekindar</h3>
@@ -84,7 +85,7 @@
                 </div>
 
                 <div class="img-jog">
-                <a href="../invYurih.php">
+                <a href="invYurih.php">
                     <img src="../assets/img/yurih.png" alt="yuurih">
                 </a>
                     <h3>Yuurih</h3>
@@ -92,7 +93,7 @@
                 </div>
 
                 <div class="img-jog"> 
-                <a href="../invKs.php">
+                <a href="invKs.php">
                     <img src="../assets/img/ks.png" alt="ks">
                 </a>
                     <h3>KSCERATO</h3>
@@ -235,7 +236,7 @@
             © 2025 RentSkins. Todos os direitos reservados.
         </div>
         <div class="footer-links">
-            <a href="../sobreNos.php"> Sobre nós </a>
+            <a href="sobreNos.php"> Sobre nós </a>
             <a href="mailto:teste@teste.com"> Contato </a>
             <a href="#"> Termos de uso </a>
         </div>

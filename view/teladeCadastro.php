@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Cadastro Cliente</title>
     <link rel="stylesheet" href="assets/css.css">
-    <link rel="stylesheet" href="css.css">
 </head>
 <body>
 </body>

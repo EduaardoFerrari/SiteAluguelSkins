@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Editar Skin</title>
-    <link rel="stylesheet" href="../StyleCss/stylecadastrar_skin.css">
+    <link rel="stylesheet" href="../assets/stylecadastrar_skin.css">
 </head>
 
 <body>

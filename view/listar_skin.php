@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Skins</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../assets/css.css">
 </head>
 
 <body>

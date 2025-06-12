@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./StyleCss/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="secao-esq">
-            <img src="./StyleCss/trofeu.png" alt="Imagem decorativa">
+            <img src="./assets/img/trofeu.png" alt="Imagem decorativa">
         </div>
         <div class="secao-dir">
             <div class="caixa-login">
@@ -46,7 +46,6 @@
                     <div class="botoes-container">
                         <a href="view/home.php" role="button" class="botao-login"> Entrar </a>
                         <a href="./view/cadastrar_proplayer.php" role="button" class="botao-login"> Cadastre-se </a>
-                        <a href="view/cadastrar_proplayer.php" role="button" class="botao-login"> Cadastre-se </a>
                     </div>
 
                     <div class="link-ajuda">
