@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Erro na conexão: " . $conn->connect_error);
     }
 
-    // Verifica se o e-mail existe
-    $stmt = $conn->prepare("SELECT id FROM usuarios WHERE email = ?");
+    // Verifica se o e-mail existe na tabela pro_players
+    $stmt = $conn->prepare("SELECT id FROM pro_players WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $resultado = $stmt->get_result();
@@ -20,8 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Criptografa a nova senha
         $senha_hash = password_hash($nova_senha, PASSWORD_DEFAULT);
 
-        // Atualiza a senha no banco
-        $stmt = $conn->prepare("UPDATE usuarios SET senha = ? WHERE email = ?");
+        // Atualiza a senha no banco para pro_players
+        $stmt = $conn->prepare("UPDATE pro_players SET senha = ? WHERE email = ?");
         $stmt->bind_param("ss", $senha_hash, $email);
         if ($stmt->execute()) {
             $mensagem = "<div class='success-message'>Senha atualizada com sucesso!</div>";
@@ -41,12 +41,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Recuperar Senha</title>
-    <link rel="stylesheet" href="./StyleCss/css.css">
+    <title>Recuperar Senha - Pro Player</title>
+    <link rel="stylesheet" href="../StyleCss/css.css">
 </head>
 <body>
     <form method="post" action="">
-        <h2>Recuperar Senha</h2>
+        <h2>Recuperar Senha - Pro Player</h2>
 
         <?php if (!empty($mensagem)) echo $mensagem; ?>
 
