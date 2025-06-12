@@ -53,10 +53,9 @@ class AppController {
     }
 
     // Formulário para criar skin
-    public function skinForm() {
-        include __DIR__ . '/../view/cadastrar_skin.php';
-    }
-
+  public function skinForm() {
+    include __DIR__ . '/../view/cadastrar_skin.php';
+}
     // Criação de skin (POST)
     public function skinCreate() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {

@@ -106,3 +106,57 @@ button:hover {
     align-items: center;
     padding: 10px 20px;
 }
+
+.btn-skin {
+    background-color: #FF5722;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.btn-skin:hover {
+    background-color: #e64a19;
+}
+
+.container {
+    background-color: #3C3F46;
+    padding: 40px;
+    border-radius: 12px;
+    width: 325px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1.6s ease-in-out;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #388E3C;
+}
+
+.btn-delete {
+    background-color: #F44336;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #D32F2F;
+}

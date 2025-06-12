@@ -1,8 +1,3 @@
-<?php
-require_once 'db.php';
-$pro_players_result = mysqli_query($conn, "SELECT id, nome FROM pro_players");
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 

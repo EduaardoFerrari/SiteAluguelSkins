@@ -8,14 +8,26 @@
 </head>
 
 <body>
+
+    <header class="site-header">
+        <a href="../telaInicial.php" class="btn-voltar">Tela Inicial</a>
+    </header>
+
     <form>
-        <h2>Lista de Skins</h2>
-        <a href="index.php?action=create" style="color: #FF5722; text-decoration: none;">Cadastrar Nova Skin</a><br><br>
+        <div class="container">
+            <h2>Lista de Skins</h2>
+            <?php
+            echo '<a href="index.php?module=skin&action=form" class="btn-skin">Cadastrar Nova Skin</a>';
+            ?>
+        </div>
         <?php
         if (count($skins) > 0) {
             foreach ($skins as $skin) {
                 echo "<p>ID: " . $skin->getId() . " | Nome: " . $skin->getNome() . " | Tipo: " . $skin->getTipo() . "</p>";
-                echo "<p><a href='index.php?action=edit&id=" . $skin->getId() . "'>Editar</a> | <a href='index.php?action=delete&id=" . $skin->getId() . "'>Excluir</a></p>";
+                echo "<p>
+        <a href='index.php?module=skin&action=edit&id=" . $skin->getId() . "' class='btn-edit'>Editar</a> | 
+        <a href='index.php?module=skin&action=delete&id=" . $skin->getId() . "' class='btn-delete' onclick=\"return confirm('Tem certeza que deseja excluir esta skin?');\">Excluir</a>
+      </p>";
                 echo "<hr>";
             }
         } else {
