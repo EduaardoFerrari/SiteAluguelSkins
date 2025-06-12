@@ -4,22 +4,20 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-size: cover;       /* cobre toda a tela */
-    background-position: center 15%;;  /* centraliza a imagem */
-    background-repeat: no-repeat; /* evita repetição */
+    background-size: cover;
+    background-position: center 15%;
+    background-repeat: no-repeat;
     background-image: url("../assets/howl-background.png");
+    /* Remover o flex */
+    min-height: 100vh;
 }
-
 /* Caixa do formulário */
 form {
     padding: 40px;
     border-radius: 12px;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.8);
+    margin: 60px auto;
 }
 
 /* Título */

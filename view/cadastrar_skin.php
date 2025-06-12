@@ -30,9 +30,14 @@
 
         <select name="pro_player_id" required>
             <option value="">Selecione um Jogador Profissional</option>
-            <?php while ($player = mysqli_fetch_assoc($pro_players_result)): ?>
-                <option value="<?= $player['id'] ?>"><?= $player['nome'] ?></option>
-            <?php endwhile; ?>
+            <?php if (isset($pro_players_result) && $pro_players_result): ?>
+                <?php while ($player = mysqli_fetch_assoc($pro_players_result)): ?>
+                    <option value="<?= $player['id'] ?>"><?= $player['nome'] ?></option>
+                <?php endwhile; ?>
+            <?php else: ?>
+                <option value="">Nenhum jogador encontrado</option>
+            <?php endif; ?>
+
         </select>
 
         <button type="submit">Cadastrar Skin</button>
