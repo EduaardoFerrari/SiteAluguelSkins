@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/../db.php';
+include_once __DIR__ . '/../view/db.php';
 include_once __DIR__ . '/User.php';
 
 class UserDAO {

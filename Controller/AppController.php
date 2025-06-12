@@ -14,12 +14,12 @@ class AppController {
         $this->skinDao = new SkinDAO();
     }
 
-    // Formulário de cadastro
+    // Formulário de cadastro de usuário
     public function userForm() {
         include __DIR__ . '/../view/cadastrar_usuario.php';
     }
 
-    // Cadastro (POST)
+    // Cadastro de usuário (POST)
     public function userCreate() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $user = new User(
@@ -41,34 +41,36 @@ class AppController {
         include __DIR__ . '/../view/cadastrar_usuario.php';
     }
 
-    // Sucesso
+    // Página de sucesso após cadastro
     public function userSuccess() {
         include __DIR__ . '/../view/sucesso.php';
     }
 
-    // Listagem
+    // Listagem de skins
     public function skinIndex() {
         $skins = $this->skinDao->listar();
         include __DIR__ . '/../view/listar_skin.php';
     }
 
-    // Form de criação
+    // Formulário para criar skin
     public function skinForm() {
         include __DIR__ . '/../view/cadastrar_skin.php';
     }
 
-    // Criação (POST)
+    // Criação de skin (POST)
     public function skinCreate() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $skin = new Skin(0, $_POST['nome'], $_POST['tipo']);
-            $this->skinDao->inserir($skin);
-            header('Location: index.php?module=skin&action=index');
-            exit;
+            if ($this->skinDao->inserir($skin)) {
+                header('Location: index.php?module=skin&action=index');
+                exit;
+            }
+            $error = 'Erro ao cadastrar skin.';
         }
         include __DIR__ . '/../view/cadastrar_skin.php';
     }
 
-    // Edição
+    // Edição de skin
     public function skinEdit($id) {
         $skin = $this->skinDao->buscarPorId($id);
         if (!$skin) {
@@ -83,34 +85,15 @@ class AppController {
         }
         include __DIR__ . '/../view/editar_skin.php';
     }
-public function userCadastrar() {
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $user = new User(
-            0,
-            $_POST['nome'],
-            $_POST['sobrenome'],
-            $_POST['cpf'],
-            $_POST['data_nascimento'],
-            $_POST['telefone'],
-            $_POST['email'],
-            password_hash($_POST['senha'], PASSWORD_DEFAULT)
-        );
-        if ($this->userDao->inserir($user)) {
-            header('Location: index.php?module=user&action=success');
-            exit;
-        }
-        $error = 'Erro ao cadastrar';
-    }
-    // GET cai aqui
-    include __DIR__ . '/../view/cadastrar_usuario.php';
-}
-    // Exclusão
+
+    // Exclusão de skin
     public function skinDelete($id) {
         $this->skinDao->excluir($id);
         header('Location: index.php?module=skin&action=index');
         exit;
     }
 
+    // Página 404 personalizada
     private function notFound($msg = 'Página não encontrada') {
         http_response_code(404);
         echo "<h1>404 — {$msg}</h1>";

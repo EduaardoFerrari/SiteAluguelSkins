@@ -11,7 +11,7 @@ body {
     background-size: cover;       /* cobre toda a tela */
     background-position: center 15%;;  /* centraliza a imagem */
     background-repeat: no-repeat; /* evita repetição */
-    background-image: url("../imagens/howl-background.png");
+    background-image: url("../assets/howl-background.png");
 }
 
 /* Caixa do formulário */
@@ -82,4 +82,32 @@ select[name="tipo"] {
     background-repeat: no-repeat;
     background-position: right 12px center;
     background-size: 20px;
+}
+
+
+.btn-voltar {
+    display: flex;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 1px;
+    left: 10px;
+
+}
+
+.btn-voltar:hover {
+    background-color: #e64a19;
+}
+
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }

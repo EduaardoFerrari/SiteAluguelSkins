@@ -6,7 +6,7 @@ ini_set('display_errors',1);
 error_reporting(E_ALL);
 
 // carrega o controller único
-require_once __DIR__ . '/controller/AppController.php';
+require_once __DIR__ . '/../Controller/AppController.php';
 $ctrl = new AppController();
 
 // pega módulo, ação e id

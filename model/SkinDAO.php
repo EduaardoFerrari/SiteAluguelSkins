@@ -1,6 +1,7 @@
 <?php
-include_once 'db.php';
-include_once 'model/Skin.php';
+
+include_once __DIR__ . '/../view/db.php';
+include_once __DIR__ . '/Skin.php';
 
 class SkinDAO {
     private $conn;

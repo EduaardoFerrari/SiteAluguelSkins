@@ -14,7 +14,11 @@ $pro_players_result = mysqli_query($conn, "SELECT id, nome FROM pro_players");
 
 <body>
 
-    <form method="post" action="index.php?module=skin&action=criada">
+    <header class="site-header">
+        <a href="../telaInicial.php" class="btn-voltar">Tela Inicial</a>
+    </header>
+
+    <form method="post" action="index.php?module=skin&action=create">
         <h2>Cadastrar Skin</h2>
         <input type="text" name="nome" placeholder="Nome da skin" required>
         <select name="tipo" required>
