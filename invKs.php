@@ -19,7 +19,7 @@
             </div>
         </div>
         
-        <div class="weapons-container">
+        <div class="armas-container">
             <!-- faca -->
             <div class="arma-categoria">
                 <div class="titulo-categoria"> FACA </div>

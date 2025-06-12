@@ -38,7 +38,6 @@ body {
     background: #DFD0B8;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
     text-align: center;
     font-size: 16px;
 }
@@ -92,9 +91,10 @@ h2 {
     margin-top: 15px;
     color: white;
     border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    width: 40%;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -104,6 +104,13 @@ h2 {
     background-color: #912323;
     box-shadow: 0px 0px 10px rgba(#912323, 0, 0, 0.7);
     transform: scale(1.1)
+}
+
+.botoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
 }
 
 .link-ajuda {
@@ -119,6 +126,13 @@ h2 {
 
 .link-ajuda a:hover {
     text-decoration: underline;
+}
+
+.ajuda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
 
 .logo {
