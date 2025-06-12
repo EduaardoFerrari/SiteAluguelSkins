@@ -8,6 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $time = $_POST["time"] ?? "";
     $posicao = $_POST["posicao"] ?? "";
     $data_nascimento = $_POST["data_nascimento"] ?? "";
+    $email = $_POST["email"] ?? "";
+    $senha = $_POST["senha"] ?? "";
 
     $conn = new mysqli("localhost", "root", "", "cs2_skins");
 
@@ -15,8 +17,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Erro na conexão: " . $conn->connect_error);
     }
 
-    $stmt = $conn->prepare("INSERT INTO pro_players (nome, nickname, nacionalidade, time, posicao, data_nascimento) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssss", $nome, $nickname, $nacionalidade, $time, $posicao, $data_nascimento);
+    // Criptografar a senha
+    $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+
+    $stmt = $conn->prepare("INSERT INTO pro_players (nome, nickname, nacionalidade, time, posicao, data_nascimento, email, senha) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssssss", $nome, $nickname, $nacionalidade, $time, $posicao, $data_nascimento, $email, $senha_hash);
 
     if ($stmt->execute()) {
         $mensagem = "<div class='success-message'>Pro player cadastrado com sucesso!</div>";
@@ -39,6 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body>
+    <header class="site-header">
+        <a href="../view/home.php" class="btn-voltar">Tela Inicial</a>
+    </header>
     <form method="post" action="">
         <h2>Cadastro de Pro Player</h2>
 
@@ -49,6 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <input type="text" name="nacionalidade" placeholder="Nacionalidade" required>
         <input type="text" name="time" placeholder="Time atual" required>
         <input type="text" name="posicao" placeholder="Função (ex: AWPer, Entry, etc.)" required>
+        <input type="email" name="email" placeholder="Email do pro player" required>
+        <input type="password" name="senha" placeholder="Senha" required>
         <input type="date" name="data_nascimento" required>
 
         <button type="submit">Cadastrar Pro Player</button>

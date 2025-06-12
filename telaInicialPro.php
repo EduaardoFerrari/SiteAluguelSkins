@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="link-ajuda">
-                        <a href="#"> Esqueci minha senha </a>
+                        <a href="./view/recuperarsenhaproplayer.php"> Esqueci minha senha </a>
                     </div>
                 </form>
             </div>

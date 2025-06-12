@@ -43,6 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 
 <body>
+
+    <header class="site-header">
+        <a href="../view/home.php" class="btn-voltar">Tela Inicial</a>
+    </header>
+
     <form method="post" action="">
         <h2>Cadastro de Cliente</h2>
 
