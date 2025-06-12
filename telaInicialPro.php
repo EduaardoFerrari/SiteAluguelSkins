@@ -46,6 +46,7 @@
                     <div class="botoes-container">
                         <a href="view/home.php" role="button" class="botao-login"> Entrar </a>
                         <a href="./view/cadastrar_proplayer.php" role="button" class="botao-login"> Cadastre-se </a>
+                        <a href="view/cadastrar_proplayer.php" role="button" class="botao-login"> Cadastre-se </a>
                     </div>
 
                     <div class="link-ajuda">
