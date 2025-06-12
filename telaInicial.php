@@ -46,11 +46,12 @@
                     
                     <div class="botoes-container">
                         <a href="view/home.php" role="button" class="botao-login"> Entrar </a>
-                        <a href="#" role="button" class="botao-login"> Cadastre-se </a>
+                        <a href="./view/cadastrar_usuario.php" role="button" class="botao-login"> Cadastre-se </a>
                     </div>
 
                     <div class="link-ajuda">
-                        <a href="#" class="ajuda"> Esqueci minha senha </a>
+                        <a href="./view/recuperarsenha.php" class="ajuda"> Esqueci minha senha </a>
+                        <p></p>
                         <a href="telaInicialPro.php" class="ajuda"> É jogador? Clique aqui. </a>
                     </div>
                 </form>
